@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <style>
+        *{
+            background-color: rgb(255, 251, 245);
+        }
+        body{
+            margin: 0;
+            padding: 10;
+        }
+
+        .button{
+            padding: 10;
+            width: 100px;
+            background-color: cadetblue;
+            border-radius: 10px;
+            cursor: pointer;
+            color: antiquewhite;
+            border: none;
+        }
+
+        .styled-image{
+            width: 200px;
+            height: auto;
+            text-align: center;
+            border-radius: 10px;
+            background-color: rgb(192, 25, 25);
+        }
+
+        .grid-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .form-elements{
+            margin-top: 20px; /* Space between logo and form elements */
+            display: flex;
+            gap: 10px; /* Space between input and button */
+        }
+
+        .submit-button,
+        #file {
+            background-color: rgb(237, 239, 240);
+            cursor: pointer;
+            border-radius: 5px;
+            margin: none;
+        }
+
+        .filebutton,
+        #file {
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+            <img src="components/logo alat.png" class="styled-image">
+            <div class="form-elements">
+                <form method= "POST" action="/" enctype="multipart/form-data">
+                    <input type="file" class="filebutton" name="file" >
+                    <button type="submit" class="submit-button">SUBMIT</button>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
